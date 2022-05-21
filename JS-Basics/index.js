@@ -1,24 +1,50 @@
 /*
-02 - Basics - 06 - Arrays
+function greet () {
+    console.log('Hello World');
+}
 
-let selectedColor = []
-The above Square brackets are called a literal array 
+greet();
 
-let selectedColors = ['red', 'blue'];
-console.log(selectedColors)
-This displays both elements
+function greet (name) {
+    console.log('Hello World');
+}
 
-let selectedColors = ['red', 'blue'];
-console.log(selectedColors[0])
-This displays the First element.
+greet();
 
-let selectedColors = ['red', 'blue'];
-selectedColors[2] = 'green';
-console.log(selectedColors)
-This displays a Third element in the array.
+Here we concatenated two strings (hello and name) with a plus, and provided an arguement/function Name
+function greet (name) {
+    console.log('Hello ' + name);
+}
+greet('John');
 
+Here we copied our function, and put in a different argument.
+function greet (name) {
+    console.log('Hello ' + name);
+}
+
+greet('John');
+greet('Mary');
+
+
+
+Here we add a last name, parameter, but we did not pass an argument (assign a value) to it, which is why it is (and displays as) literally 'undefined' in the console.
+function greet(name, lastName) {
+    console.log('Hello ' + name + ' ' + lastName);
+}
+
+greet('John');
+greet('Mary');
+
+
+
+
+Lastly, below, we have passed another argument, "Smith", which is assigned to the parameter lastName  
 */
 
-let selectedColors = ['red', 'blue'];
-selectedColors[2] = '1';
-console.log(selectedColors.length);
+function greet(name, lastName) {
+    console.log('Hello ' + name + ' ' + lastName);
+}
+
+greet('John', 'Smith');
+
+
