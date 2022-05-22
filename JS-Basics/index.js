@@ -1,50 +1,46 @@
 /*
-function greet () {
-    console.log('Hello World');
-}
-
-greet();
-
-function greet (name) {
-    console.log('Hello World');
-}
-
-greet();
-
-Here we concatenated two strings (hello and name) with a plus, and provided an arguement/function Name
-function greet (name) {
-    console.log('Hello ' + name);
-}
-greet('John');
-
-Here we copied our function, and put in a different argument.
-function greet (name) {
-    console.log('Hello ' + name);
-}
-
-greet('John');
-greet('Mary');
-
-
-
-Here we add a last name, parameter, but we did not pass an argument (assign a value) to it, which is why it is (and displays as) literally 'undefined' in the console.
-function greet(name, lastName) {
-    console.log('Hello ' + name + ' ' + lastName);
-}
-
-greet('John');
-greet('Mary');
-
-
-
-
-Lastly, below, we have passed another argument, "Smith", which is assigned to the parameter lastName  
-*/
-
+ 
+This function is Performing a task.
 function greet(name, lastName) {
     console.log('Hello ' + name + ' ' + lastName);
 }
 
 greet('John', 'Smith');
 
+
+
+function square(number) {
+    return number * number;
+}
+
+//We were calling the greet function.  Now we are calling the square function.
+let number = square(2);
+console.log(number);
+
+
+Soo... we'll call the function Square.  Square has a number parameter.  We will return number times number.
+
+Our variable says that number will equal square function (N times N), with the number parameter being 2.  There is an order of operations aspect.  The same term can have different values on the page... because sometimes that term is being acted upon, and other... things are receiving that finished output  
+
+function square(number) {
+    return number * number;
+}
+
+let number = square(2);
+console.log(number);
+
+
+*/
+//Performing a task
+function greet(name, lastName) {
+    console.log('Hello ' + name + ' ' + lastName);
+}
+
+
+function square(number) {
+    return number * number;
+}
+
+
+console.log(square(2));
 
