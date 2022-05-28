@@ -1,56 +1,42 @@
-/* 
-//Logical AND (&&)
-//Returns TRUE if both operands are TRUE
+/*
 
-console.log(true && true)
-We have two operands, and they are both true.  So, the result of evaluating this expression will be true.  
+Falsy (false) :
+Undefined
+null
+0
+boolean false
+empty string ''
+Not a Number NaN
+
+Anything that is not Falsy -> Truthy
+
+E.g.:
+
+ false || ‘Mosh’
+returns: 'Mosh'
+
+false || 1
+We get an output of 1.
+
+false || 1 || 2
+The console outputs 1.  
+
+With the logical/or operator, it will return a result as soon as it finds an operand that is truthy.  
+
+You could have a dozen more operands… it will only return the first truthy operand it encounters.  This is called Short-Circuiting.
 
 
-console.log(false && true)
-The console outputs false.  The console output false if one or both are false.
 
-let highIncome = true;
-let goodCreditScore = true;
-let eligibleForLoan = highIncome && goodCreditScore;
-console.log(eligibleForLoan);
-This outputs as true.
+let userColor = 'red';
+let defaultColor = 'blue';
+let currentColor = userColor || defaultColor;
 
-
-// Logical OR (||)
-// Returns TRUE if one or both of the operands is TRUE
-let highIncome = false;
-let goodCreditScore = true;
-let eligibleForLoan = highIncome || goodCreditScore;
-
-console.log(eligibleForLoan);
-
-
-
-
-let highIncome = false;
-let goodCreditScore = true;
-let eligibleForLoan = highIncome || goodCreditScore;
-//NOT (!)
-let applicationRefused = !eligibleForLoan;
-console.log(eligibleForLoan);
-This will return the opposite value it receives.  In the above case, the applicant Is eligible for the loan, which means eligibleForLoan returns false, which means applicationRefused is Also false.
-
+console.log(currentColor);
+The output is Red, because user color is selected
 */
-// Logical OR (||)
-// Returns TRUE if one or both of the operands is TRUE
-let highIncome = false;
-let goodCreditScore = false;
-let eligibleForLoan = highIncome || goodCreditScore;
-console.log('Eligible', eligibleForLoan);
 
-//NOT (!)
-let applicationRefused = !eligibleForLoan;
-console.log('Application Refused', applicationRefused);
+let userColor = undefined;
+let defaultColor = 'blue';
+let currentColor = userColor || defaultColor;
 
-/* Basically, when highIncome and goodCreditScore are false, then eligibleForLOad is false.
-And the console.log will display the value, along with a label.
-
-
-If !eligibleforloan has a false input value, it will flip it to true, and applicationRefused will be true.  
-
-Console.log will show the label string, and that applicationRefused is True. */
+console.log(currentColor);
