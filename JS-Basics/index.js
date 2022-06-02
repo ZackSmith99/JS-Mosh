@@ -1,57 +1,75 @@
 /*
+Ff the hour is between 6 AM and 12 PM, we’ll display a “Good morning!” message.
 
-let x = 10;
-let y = 3;
+If between 12 PM and 6 PM we’ll display Good afternoon!
 
-console.log(x);
-Outputs 10
+Otherwise we will display Good evening!
 
+let hour =  22;
 
+if (hour >= 6 && hour < 12 ) {
+    console.log('Good morning');
+}
 
-let x = 10;
-let y = 3;
+else if (hour >= 12 && hour < 18) {
+    console.log('Good Afternoon!');
+}
 
-console.log(++x);
-Outputs 11
-
-
-let x = 10;
-let y = 3;
-
-console.log(x++);
-Outputs 10 for the First console, but X Has been incremented by one.
+else if ((hour >= 18 && hour < 24) || (hour > 0 && hour < 6)) {
+console.log('Good Evening!');
+}
 
 
+Works fine.  Let’s try splitting up the statement.
 
 
-let x = 10;
-let y = 3;
 
-console.log(x++);
-console.log(x)
-Displays 10, and 11 on console, because x is incremented by one after first console.log
+This also works:
+
+let hour =  4;
+
+if (hour >= 6 && hour < 12 ) {
+    console.log('Good morning');
+}
+
+else if (hour >= 12 && hour < 18) {
+    console.log('Good Afternoon!');
+}
+
+else if (hour >= 18 && hour < 24) {
+console.log('Good Evening!');
+}
+
+else if (hour > 0 && hour < 6) {
+    console.log('Good Evening!');
+    }
 
 
-Decrement works in the same manner.
+
+
+
+let hour =  4;
+
+if (hour >= 6 && hour < 12 ) {
+    console.log('Good morning');
+}
+
+
+else if (hour >= 12 && hour < 18) {
+    console.log('Good Afternoon!');
+}
+
+else 
+console.log('Good evening');
+
 */
-let x = 10;
-let y = 3;
 
-console.log(x++);
-console.log(x)
+//Mosh says get rid of ugly brackets.  
+let hour =  4;
 
-
-// console.log(x + Y);
-// console.log(x - Y);
-// console.log(x * Y);
-// console.log(x / Y);
-// console.log(x % Y);  Remainer of division
-// console.log(x ** Y);  Exponential?  X to the power of Y
-
-// Increment (++)
-// Decrement (--)
-
-
-
-
-
+if (hour >= 6 && hour < 12 ) 
+    console.log('Good morning');
+else if (hour >= 12 && hour < 18) 
+    console.log('Good Afternoon!');
+else 
+console.log('Good evening');
