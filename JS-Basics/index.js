@@ -1,75 +1,42 @@
 /*
-Ff the hour is between 6 AM and 12 PM, we’ll display a “Good morning!” message.
+Suppose we want to determine the role of the current user i.e. guest, moderator, or an admin.
 
-If between 12 PM and 6 PM we’ll display Good afternoon!
+let role;
 
-Otherwise we will display Good evening!
+switch (role) {
+case 'guest':
+    console.log('Guest');
+break;
 
-let hour =  22;
+case 'moderator':
+    console.log('Moderator User');
+    break;
 
-if (hour >= 6 && hour < 12 ) {
-    console.log('Good morning');
-}
-
-else if (hour >= 12 && hour < 18) {
-    console.log('Good Afternoon!');
-}
-
-else if ((hour >= 18 && hour < 24) || (hour > 0 && hour < 6)) {
-console.log('Good Evening!');
-}
+    default:
+        console.log('Unknown User');
+The console is outputting unknown user because we have not initialized role and its default value is undefined, and it doesn’t match any of our case statements.
 
 
-Works fine.  Let’s try splitting up the statement.
-
-
-
-This also works:
-
-let hour =  4;
-
-if (hour >= 6 && hour < 12 ) {
-    console.log('Good morning');
-}
-
-else if (hour >= 12 && hour < 18) {
-    console.log('Good Afternoon!');
-}
-
-else if (hour >= 18 && hour < 24) {
-console.log('Good Evening!');
-}
-
-else if (hour > 0 && hour < 6) {
-    console.log('Good Evening!');
-    }
-
-
-
-
-
-let hour =  4;
-
-if (hour >= 6 && hour < 12 ) {
-    console.log('Good morning');
-}
-
-
-else if (hour >= 12 && hour < 18) {
-    console.log('Good Afternoon!');
-}
-
-else 
-console.log('Good evening');
 
 */
 
-//Mosh says get rid of ugly brackets.  
-let hour =  4;
+let role = 'guest';
 
-if (hour >= 6 && hour < 12 ) 
-    console.log('Good morning');
-else if (hour >= 12 && hour < 18) 
-    console.log('Good Afternoon!');
-else 
-console.log('Good evening');
+switch (role) {
+case 'guest':
+    console.log('Guest User');
+break;
+
+case 'moderator':
+    console.log('Moderator User');
+    break;
+
+    default:
+        console.log('Unknown User');
+}
+
+//We can also implement this exact logic using if and else statements.
+
+if (role === 'guest') console.log('Guest User');
+else if (role === 'moderator') console.log('Moderator User');
+else console.log('Unknown User');
