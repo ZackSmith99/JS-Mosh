@@ -1,42 +1,31 @@
 /*
-Suppose we want to determine the role of the current user i.e. guest, moderator, or an admin.
-
-let role;
-
-switch (role) {
-case 'guest':
-    console.log('Guest');
-break;
-
-case 'moderator':
-    console.log('Moderator User');
-    break;
-
-    default:
-        console.log('Unknown User');
-The console is outputting unknown user because we have not initialized role and its default value is undefined, and it doesn’t match any of our case statements.
+console.log('Hello World');
+console.log('Hello World');
+console.log('Hello World');
+console.log('Hello World');
+console.log('Hello World');
+Don't be dumb.
 
 
-
-*/
-
-let role = 'guest';
-
-switch (role) {
-case 'guest':
-    console.log('Guest User');
-break;
-
-case 'moderator':
-    console.log('Moderator User');
-    break;
-
-    default:
-        console.log('Unknown User');
+this is how you do it.  
+for (let i = 0; i < 5; i++) {
+    console.log ('Hello World');
 }
 
-//We can also implement this exact logic using if and else statements.
 
-if (role === 'guest') console.log('Guest User');
-else if (role === 'moderator') console.log('Moderator User');
-else console.log('Unknown User');
+note the value of the statement displayed on conosole
+for (let i = 0; i < 5; i++) {
+    console.log ('Hello World', i);
+}
+
+
+We can start i with a value of 1
+for (let i = 1; i <= 5; i++) {
+    console.log ('Hello World', i);
+}
+*/
+
+
+for (let i = 5; i >= 1; i--) {
+   if (i % 2 !== 0) console.log(i);
+}
