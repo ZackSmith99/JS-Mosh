@@ -1,39 +1,13 @@
 /*
 
-
-
 */
 
 
-let i = 0;
-while(i < 5) {
-    console.log(i);
-}
+const person = {
+    name: 'Mosh',
+age: 30
+};
 
-while (true) {
-
-} 
-
-
-do {
-
-} while (true);
-
-let x = 0;
-do {
-
-} while (x < 5); 
-
-
-for (let i = 0; i > 0: i++)
-
-for (let i = 0; i < 10; )
-
-
-
-
-
-
-
-
+for (let key in person)
+console.log(person)
 
