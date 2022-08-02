@@ -1,39 +1,26 @@
 /*
-const person = {
-    name: 'Mosh',
-age: 30
-};
+let i = 0;
+while (i <= 10) {
+   if (i === 5) break
+    console.log(i);
+    i++;
+}
+//this discontinues counting at 4.
 
-for (let key in person)
-console.log(key, person[key]);
 
-const colors = ['red', 'green', 'blue']; 
-
-for (let index in colors)
-console.log(index, colors[index]);
-
-for (let color of colors)
-console.log(color);
-
-//with the for of loop, the color variable will 'hold' an item in the array as it iterates through.  It won't also display the index number, like with you use a for-in loop.
 
 
 */
 
-//for-in
-const person = {
-    name: 'Mosh',
-age: 30
-};
+let i = 0;
+while (i <= 10) {
+   // if (i === 5) break
+   if (i % 2 === 0) {
+    i++;
+    continue;
+   }
+    console.log(i);
+    i++;
+}
 
-for (let key in person)
-console.log(key, person[key]);
 
-//for-of
-const colors = ['red', 'green', 'blue']; 
-
-for (let color of colors)
-console.log(color);
-
-//We use the for-in loop to iterate over the properties of an object. 
-//And the for-of loop to iterate over the elements, or items in an array.
