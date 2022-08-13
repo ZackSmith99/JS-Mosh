@@ -124,11 +124,6 @@ if (a > b) return a;
 return b;
 }
 
-*/
-
-
-
-
 
 let number = max(1, 2);
 console.log(number);
@@ -137,3 +132,48 @@ function max(a, b) {
 return (a > b) ? a : b;
 }
 
+
+
+
+
+
+let boolean = isLandscape(5, 2);
+console.log(boolean)
+
+function isLandscape(w, h) {
+    if (w > h) return true 
+     return false
+}
+
+
+let boolean = isLandscape(1, 2);
+console.log(boolean);
+
+function isLandscape(w, h) {
+    return (w > h) ? true : false; 
+}
+
+
+
+
+
+function isLandscape(width, height) {
+    if (width > height) return true;
+    return false;
+}
+
+function isLandscape(width, height) {
+    return (width > height) ? true : false; 
+}
+
+function isLandscape(width, height) {
+    return (width > height) 
+}
+
+*/
+
+console.log(isLandscape(300, 600));
+
+function isLandscape(width, height) {
+    return (width > height) 
+}
