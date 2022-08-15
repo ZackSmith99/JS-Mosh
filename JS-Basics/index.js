@@ -1,179 +1,67 @@
 /*
-
-let i = 0;
-while (i <= 10) {
-   // if (i === 5) break
-   if (i % 2 === 0) {
-    i++;
-    continue;
-   }
-    console.log(i);
-    i++;
-}
-
-//10 and 20
-
-if (10 )
-let i = 10
+divisible by 3, => Fizz
+divisibile by 5 => Buzz
+divisible by both 3 and 5 => FizzBuzz
+Not divisible by 3 or 5 => input
+not a number => 'Not a number"
 
 
+ (input % 3 === 0) 
+    return 'fizz';
 
-function 
 
+    const output = fizzBuzz(false);
+console.log(output);
 
-function greet (name, lastName) {
-    console.log('Hello  ' + name + ' ' + lastName);
+function fizzBuzz(input) {
     
-}
-
-greet ('John', 'Smith');
-greet ('Mary')
-
-
-function square(number) {
-return number * number;
-}
-
-let number = square(2);
-console.log(number);
-
-function square(number) {
-return number * number;
-}
-
-
-console.log('bob');
-
-
-
-
-
-
-
-
-
-
-function maximum(number1, number2) {
-    if (number1 > number2) {console.log(number1)}
-    else
-console.log(number2)}
-}
-let number1 = 10
-let number2 = 20
-
-
-if (10>20) {console.log(10)}
-else 
-console.log(20)
-
-
-
-
-
-let number1 = 10
-let number2 = 20
-
-if (number1 > number2) {console.log(number1)}
-else 
-console.log(number2)
-
-
-
-
-function maximum(number1, number2) {
-    return number1 > number2;
-    return number1 < number2;
     
+ 
+    
+
+
+
+const output = fizzBuzz(7);
+console.log(output);
+
+function fizzBuzz(input) {if (input === true)
+    return 'Not a number'
+
+    else if (input === false)
+    return 'Not a number'
+
+    else if (input % 1 !== 0)
+    return 'Not a number' 
+    
+    else if (input % 3 === 0 && input % 5 === 0) 
+    return 'fizzBuzz'
+    
+    else if (input % 3 === 0)
+    return 'fizz'
+
+    else if (input % 5 === 0)
+    return 'Buzz'
+
+    else if (input % 3 !== 0 && input % 5 !== 0)  
+    return (input)
 }
-
-console.log(maximum(10, 20));
-
-
-if (10>20) {console.log(10)}
-else 
-console.log(20)
-
-
-
-
-
-function maximum(number1, number2) {
-    if (number1 > number2) {return number1;
-    }
-    else return number2;
-}
-
-console.log(maximum(50, 20));
-
-
-let number = max(1, 2);
-console.log(number);
-
-function max(a, b) {
-if (a > b) return a;
-else return b;
-}
-
-
-
-let number = max(1, 2);
-console.log(number);
-
-function max(a, b) {
-if (a > b) return a;
-return b;
-}
-
-
-let number = max(1, 2);
-console.log(number);
-
-function max(a, b) {
-return (a > b) ? a : b;
-}
-
-
-
-
-
-
-let boolean = isLandscape(5, 2);
-console.log(boolean)
-
-function isLandscape(w, h) {
-    if (w > h) return true 
-     return false
-}
-
-
-let boolean = isLandscape(1, 2);
-console.log(boolean);
-
-function isLandscape(w, h) {
-    return (w > h) ? true : false; 
-}
-
-
-
-
-
-function isLandscape(width, height) {
-    if (width > height) return true;
-    return false;
-}
-
-function isLandscape(width, height) {
-    return (width > height) ? true : false; 
-}
-
-function isLandscape(width, height) {
-    return (width > height) 
-}
-
 */
+const output = fizzBuzz(false);
+console.log(output);
 
-console.log(isLandscape(300, 600));
+function fizzBuzz(input) {
+    if (typeof input !== 'number')
+   return NaN;
+   
+   if ((input % 3 === 0) && (input % 5 === 0))
+   return 'FizzBuzz';
+   
+   if (input % 3 === 0)
+   return 'Fizz';
 
-function isLandscape(width, height) {
-    return (width > height) 
+   if (input % 5 === 0)
+   return 'Buzz';
+
+   return input;
 }
+
