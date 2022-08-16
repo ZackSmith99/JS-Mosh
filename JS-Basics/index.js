@@ -1,67 +1,33 @@
 /*
-divisible by 3, => Fizz
-divisibile by 5 => Buzz
-divisible by both 3 and 5 => FizzBuzz
-Not divisible by 3 or 5 => input
-not a number => 'Not a number"
 
+My solution:
 
- (input % 3 === 0) 
-    return 'fizz';
+checkSpeed(80);
 
+function checkSpeed(speed) { if (speed <= 74) console.log('OK');
 
-    const output = fizzBuzz(false);
-console.log(output);
+else if (speed >= 75  && speed < 130)
+console.log('Point: '+ (Math.floor((speed -75)/5 + 1)) )
 
-function fizzBuzz(input) {
-    
-    
- 
-    
-
-
-
-const output = fizzBuzz(7);
-console.log(output);
-
-function fizzBuzz(input) {if (input === true)
-    return 'Not a number'
-
-    else if (input === false)
-    return 'Not a number'
-
-    else if (input % 1 !== 0)
-    return 'Not a number' 
-    
-    else if (input % 3 === 0 && input % 5 === 0) 
-    return 'fizzBuzz'
-    
-    else if (input % 3 === 0)
-    return 'fizz'
-
-    else if (input % 5 === 0)
-    return 'Buzz'
-
-    else if (input % 3 !== 0 && input % 5 !== 0)  
-    return (input)
+else return console.log('License Suspended')
 }
+
+
+
 */
-const output = fizzBuzz(false);
-console.log(output);
+checkSpeed(70);
 
-function fizzBuzz(input) {
-    if (typeof input !== 'number')
-   return NaN;
+function checkSpeed(speed) {
+    const speedLimit = 70;
+    const kmPerPoint = 5;
    
-   if ((input % 3 === 0) && (input % 5 === 0))
-   return 'FizzBuzz';
-   
-   if (input % 3 === 0)
-   return 'Fizz';
-
-   if (input % 5 === 0)
-   return 'Buzz';
-
-   return input;
+    if (speed <= speedLimit + kmPerPoint) {
+        console.log('OK');
+        return;
+    }
+    const points = Math.floor((speed - speedLimit) / kmPerPoint);
+    if (points >= 12)
+    console.log('License suspended')
+    else
+    console.log('Points', points);
 }
-
