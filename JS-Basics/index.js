@@ -68,17 +68,6 @@ if (typeof color == 'number')
 console.log(color.length)
 
 
-*/
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -90,13 +79,55 @@ function countTruthy(array) {
     
     let bob = 0;
     for (let value of array)
-    if (value === 'number' || value !== false || value !== 0 || value !== null || value !== undefined || value !== '') 
+    if (value) 
     
      
     
     bob++;
     return bob;
+}
 
 
+
+
+
+console.log(key, movie[key ==  typeof string])
+
+
+
+
+showProperties(movie);
+
+function showProperties(obj) { for (let key in movie) if (key, movie[key == 'string'])
+ 
 
 }
+
+*/
+
+const movie = {
+    title: 'a',
+    releaseYear: 2018,
+    rating: 4.5,
+    director: 'b'
+};
+
+
+showProperties(movie);
+
+function showProperties(obj) { for (let key in movie)
+   if (typeof key movie[key] == 'string')
+   console.log(key, movie[key])
+    
+
+}
+
+
+
+
+
+
+
+
+
+
