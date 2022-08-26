@@ -89,22 +89,6 @@ function countTruthy(array) {
 
 
 
-
-
-console.log(key, movie[key ==  typeof string])
-
-
-
-
-showProperties(movie);
-
-function showProperties(obj) { for (let key in movie) if (key, movie[key == 'string'])
- 
-
-}
-
-*/
-
 const movie = {
     title: 'a',
     releaseYear: 2018,
@@ -115,12 +99,40 @@ const movie = {
 
 showProperties(movie);
 
-function showProperties(obj) { for (let key in movie)
-   if (typeof key movie[key] == 'string')
-   console.log(key, movie[key])
-    
+function showProperties(obj) { 
+    for (let key in obj)
+    if (typeof obj[key] === 'string')
+    console.log(key, obj[key]);
+}
+
+
+console.log(sum(10));
+
+function sum(limit) {
+
+for (let i = 0; i * 3 <= limit; i++);
 
 }
+console.log(sum(10));
+
+
+let fiver = 
+    let threes = 
+*/
+
+console.log(sum(10));
+
+function sum(limit) { 
+    
+    let i = 1
+    let sum = (fiver + threes);
+    let bob = (i * 3)
+
+
+   return bob
+
+}
+
 
 
 
