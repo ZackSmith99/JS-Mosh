@@ -1,39 +1,36 @@
 /*
+showPrimes(15);
 
-showStars(20);
+function showPrimes(limit) {
+    for (let number = 2; number <= limit; number++) {
+        
+        let isPrime = true;
+        for (let factor = 2; factor < number; factor++) {
+          if (number % factor === 0) {
+            isPrime = false;
+            break;
+          }
+        }
+        
+ if (isPrime) console.log(number);
+    }
 
-function showStars(rows) {
-  
-    showStars(20);
+    }
 
-function showStars(rows) {
-  
-    let star = ''; 
-    for (let i = 1; i <= rows; i++) 
-       console.log(star += '*')
-
-
-
-
-    
-     let pattern = '';
-     for (let i = 0; i < rows; i++)   
-        pattern += '*',      
-        console.log(pattern);
-}
 
 */
 
+showPrimes(15);
 
-showStars(20);
+function showPrimes(limit) {
+    for (let number = 2; number <= limit; number++) 
+        if (isPrime(number)) console.log(number); 
+}
 
-function showStars(rows) {
-  
-    
-    for (let row = 1; row <= rows; row++) {
-     let pattern = '';
-     for (let i = 0; i < row; i++)   
-        pattern += '*';      
-        console.log(pattern);
-    }
+function isPrime(number) {
+    for (let factor = 2; factor < number; factor++) 
+      if (number % factor === 0) 
+        return false;
+      
+    return true;
 }
