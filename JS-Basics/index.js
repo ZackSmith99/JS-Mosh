@@ -1,27 +1,32 @@
 /*
-let x = { value: 10 };
-let y = x;
+const circle = {
+    radius: 1,
+    draw() {
+        console.log('draw')
+    }
+};
 
-x.value = 20;
+for (let key in circle)
+    console.log(key, circle[key]);
 
-
-
-
-let number = 10;
-
-function increase(number) {
-    number++;
-}
-
-increase(number);
-console.log(number);
-
+for (let key of circle)
+    console.log(key);
 */
-let obj = { value: 10 };
 
-function increase(obj) {
-    obj.value++;
-}
+const circle = {
+    radius: 1,
+    draw() {
+        console.log('draw')
+    }
+};
 
-increase(obj);
-console.log(obj);
+for (let key in circle)
+    console.log(key, circle[key]);
+
+for (let entry of Object.keys(circle))
+    console.log(entry);
+
+    for (let entry of Object.entries(circle))
+    console.log(entry);
+  
+    if ('radius' in circle) console.log('yes');
