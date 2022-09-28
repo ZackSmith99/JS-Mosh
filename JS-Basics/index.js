@@ -1,54 +1,91 @@
 /*
-const circle = {
-    radius: 1,
-    draw() {
-        console.log('draw');
-    }
+let address = {
+    street: 'a',
+    city: 'b',
+    zipCode: 'c'
 };
 
-const another = {};
-
-for (let key in circle)
-    another[key] = circle[key];
-
-another['radius'] = circle['radius']
-
-console.log(another);
 
 
 
 
-const circle = {
-  radius: 1,
-  draw() {
-    console.log("draw");
-  },
+let address = {
+    street: 'a',
+    city: 'b',
+    zipCode: 'c'
 };
 
-// const another = {};
-// for (let key in circle)
-//     another[key] = circle[key];
+function createAddress(street, city, zipCode) {
+    return {
+        street,
+        city,
+        zipCode
+    };
+}
 
-const another = Object.assign({
-    color: 'yellow'
-}, circle);
 
-console.log(another);
+
+let address = {
+    street: 'a',
+    city: 'b',
+    zipCode: 'c'
+};
+
+function CreateAddress(street, city, zipCode) {
+    this.street = street;
+    this.city = city;
+    this.zipCode = zipCode;
+}
+
+const createAddress = new CreateAddress('a', 'b', 'c')
+console.log(CreateAddress[street])
+
+
+///this also works
+console.log(createAddress('a', 'b', 'c'))
+
+function createAddress(street, city, zipCode) {
+    return {
+        street,
+        city,
+        zipCode
+    };
+}
+
+
+
+function CreateAddress(street, city, zipCode) {
+    this.street = street;
+    this.city = city;
+    this.zipCode = zipCode;
+}
+
+const address = new CreateAddress('a', 'b', 'c');
+
+console.log(address)
 */
 
-const circle = {
-  radius: 1,
-  draw() {
-    console.log("draw");
-  },
-};
+///let address = createAddress('a', 'b', 'c');
 
-// const another = {};
-// for (let key in circle)
-//     another[key] = circle[key];
+let address = new Address('a', 'b', 'c');
 
-// const another = Object.assign({}, circle);
+console.log(address)
 
-const another = { ...circle };
 
-console.log(another);
+//factory function
+function createAddress(street, city, zipCode) {
+    return {
+        street,
+        city,
+        zipCode
+    };
+}
+
+
+//constructor function
+function CreateAddress(street, city, zipCode) {
+    this.street = street;
+    this.city = city;
+    this.zipCode = zipCode;
+}
+
