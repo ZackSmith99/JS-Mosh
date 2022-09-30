@@ -1,10 +1,16 @@
 /*
 
 */
-// String primitive
-const message = 'This is my\n first message';
 
-// String object
-const another = new String('hi');
+const name = 'John';
+const message = 'Hi ' + name + ',\n'
 
-console.log(message)
+const another = 
+`Hi ${name} ${2 + 3},
+
+thank you for joining my mailing list.
+
+Regards, 
+Mosh`;
+
+console.log(another)
