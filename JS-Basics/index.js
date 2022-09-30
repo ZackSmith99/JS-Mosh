@@ -1,16 +1,13 @@
 /*
+const now = new Date();
+const date1 = new Date('May 11 2018 09:00')
+const date2 = new Date(2018, 4, 11, 9, 0)
 
+now.get
 */
 
-const name = 'John';
-const message = 'Hi ' + name + ',\n'
+const now = new Date();
+const date1 = new Date('May 11 2018 09:00')
+const date2 = new Date(2018, 4, 11, 9, 0)
 
-const another = 
-`Hi ${name} ${2 + 3},
-
-thank you for joining my mailing list.
-
-Regards, 
-Mosh`;
-
-console.log(another)
+now.setFullYear(2017);
