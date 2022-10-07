@@ -42,8 +42,6 @@ let blog = {
 
 
 }
-*/
-
 
 
 let post = {
@@ -59,5 +57,62 @@ let post = {
 };
 
 console.log(post);
+
+
+
+function Post() {
+    this.title = 'a';
+    this.body = 'b';
+    this.author = 'c';
+};
+
+Post.call({});
+
+console.log(Post)
+
+
+let post = new Post('a', 'b', 'c')
+
+console.log(post)
+
+
+
+function Post(title, body, author) {
+    this.title = title;
+    this.body = body;
+    this.author = author;
+    this.views = 0;
+    this.comments = [];
+    this.isLive = false;
+}
+
+
+function Post('a', 'b', 'c',) {
+    this.title;
+    this.body;  
+    this.author; 
+};
+
+Post.call({});
+
+console.log(Post)
+
+*/
+
+
+let post = new Post('a', 'b', 'c')
+
+console.log(post)
+
+
+
+function Post(title, body, author) {
+    this.title = title;
+    this.body = body;
+    this.author = author;
+    this.views = 0;
+    this.comments = [];
+    this.isLive = false;
+}
 
 
