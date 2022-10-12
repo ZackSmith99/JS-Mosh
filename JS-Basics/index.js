@@ -1,21 +1,51 @@
 /*
-const courses = [
-    { id: 1, name: 'a'},
-    { id: 2, name: 'b'},
-];
+// End
+const last = numbers.pop();
+console.log(numbers);
+console.log(last);
 
-const course = courses.find(function(course) {
-    return course.name === 'a'
-});
 
-console.log(course);
+// Beginning
+numbers.shift();
+console.log(first);
+
+// Middle
+numbers.splice()
+
+
+
+
+
+
+
+const numbers = [1, 2, 3, 4]
+
+
+// End
+const last = numbers.pop();
+
+// Beginning
+const first = numbers.shift();
+console.log(first);
+
+// Middle
+numbers.splice()
+
+
 
 */
-const courses = [
-    { id: 1, name: 'a'},
-    { id: 2, name: 'b'},
-];
 
-const course = courses.find(course => course.name === 'a');
 
-console.log(course);
+const numbers = [1, 2, 3, 4]
+
+
+// End
+const last = numbers.pop();
+
+// Beginning
+const first = numbers.shift();
+
+
+// Middle
+numbers.splice(2, 2);
+console.log(numbers)
