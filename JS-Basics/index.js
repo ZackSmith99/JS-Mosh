@@ -1,14 +1,17 @@
 /*
+const numbers = [1, 2, 3];
+
+for (let number of numbers)
+    console.log(number);
+
+    numbers.forEach(function(number) {
+        console.log(number);
+    });
 
 */
+    const numbers = [1, 2, 3];
 
-const first = [{ id: 1 }];
-const second = [4, 5, 6];
+for (let number of numbers)
+    console.log(number);
 
-const combined = first.concat(second);
-first[0].id = 10;
-
-const slice = combined.slice();
-
-console.log(combined);
-console.log(slice);
+    numbers.forEach((number, index ) => console.log(index, number));
