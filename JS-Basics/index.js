@@ -1,51 +1,23 @@
 /*
-// End
-const last = numbers.pop();
-console.log(numbers);
-console.log(last);
-
-
-// Beginning
-numbers.shift();
-console.log(first);
-
-// Middle
-numbers.splice()
-
-
-
-
-
-
-
-const numbers = [1, 2, 3, 4]
-
-
-// End
-const last = numbers.pop();
-
-// Beginning
-const first = numbers.shift();
-console.log(first);
-
-// Middle
-numbers.splice()
-
-
 
 */
 
+let numbers = [1, 2, 3, 4];
+let another = numbers;
 
-const numbers = [1, 2, 3, 4]
-
-
-// End
-const last = numbers.pop();
-
-// Beginning
-const first = numbers.shift();
+// Solution 1
+// numbers = [];
 
 
-// Middle
-numbers.splice(2, 2);
-console.log(numbers)
+// Solution 2
+// numbers.length = 0;
+
+// Solution 3
+// numbers.splice(0, numbers.length);
+
+// Solution 4
+while (numbers.length > 0)
+    numbers.pop();
+
+console.log(numbers);
+console.log(another);
