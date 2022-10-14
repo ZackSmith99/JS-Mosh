@@ -1,17 +1,14 @@
 /*
-const numbers = [1, 2, 3];
-
-for (let number of numbers)
-    console.log(number);
-
-    numbers.forEach(function(number) {
-        console.log(number);
-    });
 
 */
-    const numbers = [1, 2, 3];
+  
+const numbers = [1, 2, 3];
+const joined = numbers.join(',');
+console.log(joined);
 
-for (let number of numbers)
-    console.log(number);
+const message = 'This is my first message';
+const parts = message.split(' ');
+console.log(parts);
 
-    numbers.forEach((number, index ) => console.log(index, number));
+const combined = parts.join('-');
+console.log(combined);
