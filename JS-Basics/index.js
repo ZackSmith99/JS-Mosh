@@ -2,13 +2,21 @@
 
 */
   
-const numbers = [1, 2, 3];
-const joined = numbers.join(',');
-console.log(joined);
+const courses = [
+    { id: 1, name: 'Node.js' },
+    { id: 2, name: 'javaScript' },
+];
 
-const message = 'This is my first message';
-const parts = message.split(' ');
-console.log(parts);
+courses.sort(function(a, b) {
+    // a < b => -1
+    // a > b => 1
+    // a === b => 0
+    const nameA = a.name.toLowerCase();
+    const nameB = b.name.toLowerCase();
 
-const combined = parts.join('-');
-console.log(combined);
+    if (nameA < nameB) return -1;
+    if (nameA > nameB) return 1;
+    return 0;
+});
+
+console.log(courses);
