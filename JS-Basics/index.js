@@ -4,11 +4,6 @@
   
 const numbers = [1, -1, 2, 3];
 
-//every()
-//some()
+const filtered = numbers.filter(n => n >= 0); 
 
-const atLeastOnePositive = numbers.some(function(value ) {
-    return value >= 0;
-});
-
-console.log(allPositive);
+console.log(filtered);
