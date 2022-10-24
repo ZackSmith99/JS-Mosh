@@ -1,22 +1,15 @@
 /*
 const numbers = [1, -1, 2, 3];
 
-const filtered = numbers.filter(n => n >= 0); 
+let sum = 0;
+for (let n of numbers)
+    sum += n;
 
-console.log(filtered);
+console.log(sum);
 
-
-
-
-
-
-const numbers = [1, -1, 2, 3];
-
-const filtered = numbers.filter(n => n >= 0); 
-
-filtered.map(n => '<li>' + n + '</li>')
-
-console.log(filtered);
+const sum = numbers.reduce((accumulator, currentValue) => {
+    return accumulator + currentValue;
+}, 0);
 
 
 
@@ -25,139 +18,42 @@ console.log(filtered);
 
 const numbers = [1, -1, 2, 3];
 
-const filtered = numbers.filter(n => n >= 0); 
-
-const items = filtered.map(n => '<li>' + n + '</li>')
-
-const html = items.join('');
-
-console.log(html);
-
-
-
-
-const numbers = [1, -1, 2, 3];
-
-const filtered = numbers.filter(n => n >= 0); 
-
-const items = filtered.map(n => '<li>' + n + '</li>')
-
-const html = '<ul>' + items.join('') + '</ul>'
-
-console.log(html);
-
-
-
-
-const numbers = [9, -1, 2, 3];
-
-const filtered = numbers.filter(n => n >= 0); 
-
-const items = filtered.map(n => {
-    const obj = { value: n };
-    return obj;
-})
-
-console.log(items);
-
-
-
-
-const numbers = [9, -1, 2, 3];
-
-const filtered = numbers.filter(n => n >= 0); 
-
-const items = filtered.map(n => {
-    const obj = { value: n };
-})
-
-console.log(items);
-
-
-
-
-
-
-
-
-const numbers = [9, -1, 2, 3];
-
-const filtered = numbers.filter(n => n >= 0); 
-
-const items = filtered.map(n => ({ value: n }));
-
-
-console.log(items);
-
-
-
-
-
-const numbers = [9, -1, 2, 3];
-
-numbers.filter(n => n >= 0).map 
-
-const items = filtered.map(n => ({ value: n }));
-
-
-console.log(items);
-
-
-
-
-const numbers = [9, -1, 2, 3];
-
-const filtered = numbers.filter(n => n >= 0); 
-
-const items = filtered.map(n => ({ value: n }));
-
-console.log(items);
-
-
-
-
-
-
-
-const numbers = [9, -1, 2, 3];
-
-numbers.filter(n => n >= 0).map 
-
-const items = filtered.map(n => ({ value: n }));
-
-console.log(items);
-
-
-
-const numbers = [9, -1, 2, 3];
-
-numbers.filter(n => n >= 0).map(n => ({ value: n }));
-
-
-console.log(items);
-
-
-
-
-
-const numbers = [9, -1, 2, 3];
-
-numbers
-    .filter(n => n >= 0)
-    .map(n => ({ value: n }));
-
-const items = filtered.map(n => ({ value: n }));
-
-console.log(items);
-
+// a = 0, c = 1 => a = 1
+// a = 1, c = -1 => a = 0
+// a = 0, c = 2 => a = 2
+// a = 2, c = 3 => a = 5
+
+// a = 1, c = -1 => a = 0
+// a = 0, c = 2 => a = 2
+// a = 2, c = 3 => a = 5
+const sum = numbers.reduce(
+    (accumulator, currentValue) => accumulator + currentValue 
+    );
+
+    let sum = 0;
+    for (let n of numbers)
+        sum += n;
+
+console.log(sum);
 */
   
+
+
+
 const numbers = [1, -1, 2, 3];
 
-const items = numbers
-    .filter(n => n >= 0)
-    .map(n => ({ value: n }))
-    .filter(obj => obj.value > 1)
-    .map(obj => obj.value );
-    
-console.log(items);
+// a = 0, c = 1 => a = 1
+// a = 1, c = -1 => a = 0
+// a = 0, c = 2 => a = 2
+// a = 2, c = 3 => a = 5
+
+// a = 1, c = -1 => a = 0
+// a = 0, c = 2 => a = 2
+// a = 2, c = 3 => a = 5
+const sum = numbers.reduce(
+    (accumulator, currentValue) => accumulator + currentValue 
+    );
+
+console.log(sum);
+
+
