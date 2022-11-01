@@ -1,59 +1,38 @@
 /*
-const numbers = [1, -1, 2, 3];
+const numberz = arrayFromRanges(-10, -4);
 
-let sum = 0;
-for (let n of numbers)
-    sum += n;
+console.log(numberz);
 
-console.log(sum);
-
-const sum = numbers.reduce((accumulator, currentValue) => {
-    return accumulator + currentValue;
-}, 0);
-
+function arrayFromRanges(min, max) {
+  let bobby = []
+    for ( let i = min; i <= max; i++)
+    bobby.push(i);
+    console.log(bobby)
+};
 
 
-
-
-
-const numbers = [1, -1, 2, 3];
-
-// a = 0, c = 1 => a = 1
-// a = 1, c = -1 => a = 0
-// a = 0, c = 2 => a = 2
-// a = 2, c = 3 => a = 5
-
-// a = 1, c = -1 => a = 0
-// a = 0, c = 2 => a = 2
-// a = 2, c = 3 => a = 5
-const sum = numbers.reduce(
-    (accumulator, currentValue) => accumulator + currentValue 
-    );
-
-    let sum = 0;
-    for (let n of numbers)
-        sum += n;
-
-console.log(sum);
 */
   
+const numbers = arrayFromRange(-10, -4);
 
+console.log(numbers);
 
+function arrayFromRange(min, max) {
+  for (let i = -9; i <= max; i++)
+    console.log(i)
 
-const numbers = [1, -1, 2, 3];
+};
 
-// a = 0, c = 1 => a = 1
-// a = 1, c = -1 => a = 0
-// a = 0, c = 2 => a = 2
-// a = 2, c = 3 => a = 5
+const numberz = arrayFromRanges(-10, -4);
 
-// a = 1, c = -1 => a = 0
-// a = 0, c = 2 => a = 2
-// a = 2, c = 3 => a = 5
-const sum = numbers.reduce(
-    (accumulator, currentValue) => accumulator + currentValue 
-    );
+console.log(numberz);
 
-console.log(sum);
+function arrayFromRanges(min, max) {
+  let bobby = []
+    for ( let i = min; i <= max; i++)
 
+    bobby.push(i)
+   
+  console.log(bobby)
+};
 
