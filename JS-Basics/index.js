@@ -1,38 +1,29 @@
 /*
-const numberz = arrayFromRanges(-10, -4);
+const numbers = [1, 2, 2, 3, 4];
 
-console.log(numberz);
+function includes(array, searchElement) { 
+  let booleanz = false;
+  
+  for (let number of array ) { 
+    if (number === searchElement) {
+      booleanz = true;
+      }
+    }
+  return booleanz
+}
 
-function arrayFromRanges(min, max) {
-  let bobby = []
-    for ( let i = min; i <= max; i++)
-    bobby.push(i);
-    console.log(bobby)
-};
-
-
+console.log(includes(numbers, 2))
 */
   
-const numbers = arrayFromRange(-10, -4);
 
-console.log(numbers);
+const numbers = [1, 2, 2, 3, 4];
 
-function arrayFromRange(min, max) {
-  for (let i = -9; i <= max; i++)
-    console.log(i)
+console.log(includes(numbers, 1));
 
-};
-
-const numberz = arrayFromRanges(-10, -4);
-
-console.log(numberz);
-
-function arrayFromRanges(min, max) {
-  let bobby = []
-    for ( let i = min; i <= max; i++)
-
-    bobby.push(i)
-   
-  console.log(bobby)
-};
+function includes(array, searchElement) { 
+  for (let element of array)
+    if (element === searchElement)
+      return true;
+  return false;
+}
 
